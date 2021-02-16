@@ -30,9 +30,51 @@ li {
 li em{
   font-weight: 800;
 }
-ul:nth-last-of-type(2) li:nth-child(-n+3){
+/*Pegando a Segunda "ul" do html contando da última*/ ul:nth-last-of-type(2)
+/*Pegando as três primeiras "li's*/                   li:nth-child(-n+3){
   color: blue;
 }
-ul:nth-last-of-type(2) li:nth-child(2), ul:nth-last-of-type(2) li:nth-child(3){
+/*Pegando a Segunda "ul" do html contando da última*/ ul:nth-last-of-type(2)
+/*Pegando a Segunda "li" da "ul"*/                    li:nth-child(2),
+/*Pegando a Segunda "ul" do html contando da última*/ ul:nth-last-of-type(2)
+/*Pegando a Terceira "li" da "ul"*/                   li:nth-child(3){
   background-color: pink;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  font-weight: 800;
+}
+/*Pegando a Última "ul" do html*/   ul:nth-last-of-type(1)
+/*Pegando a Primeira "li" da "ul"*/ li:nth-child(1)
+/*      Apontando o Mouse      */   a:hover{
+  color: whitesmoke;
+  background-color: orange;;
+}
+/*Pegando a Última "ul" do html*/   ul:nth-last-of-type(1)
+/*Pegando a "li" número 2 da "ul"*/ li:nth-child(2)
+/*      Apontando o Mouse      */   a:hover{
+  color: #fff !important;
+  background-color: #4CAF50 !important;
+}
+/*Pegando a Última "ul" do html*/   ul:nth-last-of-type(1)
+/*Pegando a "li" número 3 da "ul"*/ li:nth-child(3)
+/*      Apontando o Mouse      */   a:hover{
+  background-color: #83d0f2;
+  color: black;
+}
+/*Pegando a Última "ul" do html*/   ul:nth-last-of-type(1)
+/*Pegando a "li" número 4 da "ul"*/ li:nth-child(4)
+/*      Apontando o Mouse      */   a:hover{
+  background: Green;
+  border-color: rgb(4, 95, 4);
+  color: black;
+}
+/*Pegando a Última "ul" do html*/   ul:nth-last-of-type(1)
+/*Pegando a última "li" da "ul"*/   li:nth-child(5)
+/*      Apontando o Mouse      */   a:hover{
+  background-color: #32a791;
+  color: black;
 }
