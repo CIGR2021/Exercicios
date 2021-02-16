@@ -1,0 +1,89 @@
+*{
+  margin: 0;
+  padding: 0%;
+}
+body{
+  width: 0 auto;
+  height: 600px;
+  margin-top: 1%;
+  margin-left: 4%;
+  margin-right: 4%;
+  padding: 1%;
+}
+.conteiner{
+  margin: auto;
+  background-color: gray;
+  height: auto;
+  padding: 2%;
+}
+.conteiner2{
+  width: 47%;
+  margin: 0;
+  display: inline-block;
+
+}
+.conteiner3{
+  width: 47%;
+  display: inline-block;
+}
+h1{
+  text-align: center;
+  padding: 1%;
+  color: wheat;
+}
+h3{
+  width: auto;
+  height: auto;
+  font-size: 10pt;
+  text-align: center;
+  vertical-align: middle;
+}
+p{
+  margin-bottom: 0.5%;
+  text-align: center;
+  color: whitesmoke;
+}
+.primaria{
+  background-color: turquoise;
+  color: darkblue;
+  width: 50%;
+  margin: auto;
+  padding-left: 1%;
+  padding-right: 1%;
+  height: 50px;
+}
+.secundaria{
+  background-color: yellowgreen;
+  color: brown;
+  width: 50%;
+  margin: auto;
+  padding-left: 1%;
+  padding-right: 1%;
+  height: 50px;
+}
+.complementar{
+  background-color: violet;
+  color: darkmagenta;
+  width: 50%;
+  margin: auto;
+  padding-left: 1%;
+  padding-right: 1%;
+  height: 50px;
+}
+.escura{
+  background-color: teal;
+  color: white;
+  width: 50%;
+  margin: auto;
+  padding-left: 1%;
+  padding-right: 1%;
+  height: 50px;
+}
+.clara{
+  background-color: yellow;
+  width: 50%;
+  margin: auto;
+  padding-left: 1%;
+  padding-right: 1%;
+  height: 50px;
+}
