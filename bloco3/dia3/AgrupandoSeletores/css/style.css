@@ -4,6 +4,9 @@ h1, p{
 li:hover{
   background-color: rgb(48, 67, 150);
 }
-ul{
+li:active{
+  font-size: 20pt;
+}
+ul, ol{
   list-style: none;
 }
