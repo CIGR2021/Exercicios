@@ -11,6 +11,9 @@
 ol{
   background-color: yellow;
 }
-ol li:nth-of-type(2){
+ol li:nth-child(2n){
   color: green;
+}
+ol li:nth-child(2), ol li:nth-child(3){
+  text-transform: uppercase;
 }
