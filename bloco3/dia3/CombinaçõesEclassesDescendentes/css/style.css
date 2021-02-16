@@ -11,3 +11,6 @@
 ol{
   background-color: yellow;
 }
+ol li:nth-of-type(2){
+  color: green;
+}
