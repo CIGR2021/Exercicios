@@ -30,3 +30,9 @@ li {
 li em{
   font-weight: 800;
 }
+ul:nth-last-of-type(2) li:nth-child(-n+3){
+  color: blue;
+}
+ul:nth-last-of-type(2) li:nth-child(2), ul:nth-last-of-type(2) li:nth-child(3){
+  background-color: pink;
+}
