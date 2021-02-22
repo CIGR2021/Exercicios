@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  background-color: rgba(27,28,22, 1);
+  color: aliceblue;
+  text-align: center;
+  margin: auto;
+  margin-top: 1%;
+  width: 90%;
+  height: 100px;
+  border-radius: 5% 5% 30% 30%;
+  font-size: 8pt;
+}
+h1{
+  margin-bottom: 1%;
+}
+ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 3%;
+  padding: 1%;
+  box-shadow: 1px 1px 2px 2px rgba(120, 121, 118, 0.5);
+  border-radius: 0% 25% 0% 25%;
+}
+ul li:hover{
+  box-shadow: 1px 1px 2px 2px white;
+  border-radius: 0% 25% 0% 25%;
+  padding: 1%;
+}
+a{
+  text-decoration: none;
+  color: aliceblue;
+}
+/* FIM DA ESTILIZAÇÃO DO HEADER */
