@@ -93,11 +93,71 @@
 // console.log(result)
 // 
 // Requisito 10
-let custoDoProduto = 200;
-let quantidadeProduto = 1000;
-let valorDeVenda = 300;
-let imposto = custoDoProduto * 0.2;
-let custoDoProdutoFinal = custoDoProduto + imposto;
-let lucro1000 = (valorDeVenda - custoDoProdutoFinal) * quantidadeProduto;
+// let custoDoProduto = 200;
+// let quantidadeProduto = 1000;
+// let valorDeVenda = 300;
+// let imposto = custoDoProduto * 0.2;
+// let custoDoProdutoFinal = custoDoProduto + imposto;
+// let lucro1000 = (valorDeVenda - custoDoProdutoFinal) * quantidadeProduto;
+// 
+// console.log(lucro1000)
 
-console.log(lucro1000)
+// Requisito 11
+let salarioBruto = 6000;
+let salarioLiquido = null;
+let salarioTetoRegra = [1556.95, 2594.93, 5189.82]
+
+// Salário bruto até R$ 1.556,94: alíquota de 8%
+// Salário bruto de R$ 1.556,95 a R$ 2.594,92: alíquota de 9%
+// Salário bruto de R$ 2.594,93 a R$ 5.189,82: alíquota de 11%
+// Salário bruto acima de R$ 5.189,82: alíquota máxima de R$ 570,88
+let innssRegra = [0.08, 0.09, 0.11, 570.88]
+
+// De R$ 1.903,99 a 2.826,65: alíquota de 7,5% e parcela de R$ 142,80 a deduzir do imposto
+let impostoRegraUm = 142.80 - ((salarioBruto - (salarioBruto * innssRegra[1])) * 0.075) - (salarioBruto - (salarioBruto * innssRegra[1]));
+
+// De R$ 2.826,66 a R$ 3.751,05: alíquota de 15% e parcela de R$ 354,80 a deduzir do imposto
+let impostoRegraDoisMaisIR = (salarioBruto - (salarioBruto * innssRegra[2])) * 0.15 - 354.80
+let impostoRegraDois = (salarioBruto - (salarioBruto * innssRegra[2])) - impostoRegraDoisMaisIR;
+
+// De R$ 3.751,06 a R$ 4.664,68: alíquota de 22,5% e parcela de R$ 636,13 a deduzir do imposto
+let impostoRegraTresMaisIR = (salarioBruto - (salarioBruto * innssRegra[2])) * 0.225 - 636.13
+let impostoRegraTres = (salarioBruto - (salarioBruto * innssRegra[2])) - impostoRegraTresMaisIR;
+
+// Acima de R$ 4.664,68: alíquota de 27,5% e parcela de R$ 869,36 a deduzir do imposto.
+let impostoRegraQuatroMaisIR = (salarioBruto - (salarioBruto * innssRegra[2])) * 0.275 - 869.36
+let impostoRegraQuatro = (salarioBruto - (salarioBruto * innssRegra[2])) - impostoRegraQuatroMaisIR;
+
+// Regra INSS Acima de R$ 5.189,82: alíquota de 570,88
+let impostoRegraCincoMaisIR = (salarioBruto - innssRegra[3]) * 0.275 - 869.36
+let impostoRegraCinco = salarioBruto - innssRegra[3] - impostoRegraCincoMaisIR;
+
+if (salarioBruto < salarioTetoRegra[0]){ // Menor que 1.556,95
+  salarioLiquido = salarioBruto - (salarioBruto * innssRegra[0]).toFixed(2);
+}
+// Regra Um - 1.903,99 a 2.826,65
+else if (salarioBruto < salarioTetoRegra[1]){ // Menor que 2.594,93
+  if(salarioBruto >= 1903.99){
+    salarioLiquido = impostoRegraUm * (-1).toFixed(2);
+  }else{
+    salarioLiquido = salarioBruto - (salarioBruto * innssRegra[1]).toFixed(2);
+  }
+}
+// Regra Um - de R$ 1.903,99 a 2.826,65
+// Regra Dois - de R$ 2.826,66 a R$ 3.751,05
+// Regra Três - de R$ 3.751,06 a R$ 4.664,68
+// Regra Quatro - Acima de R$ 4.664,68
+else if (salarioBruto <= salarioTetoRegra[2]){ // Menor ou igual a 5.189,82
+  if(salarioBruto > 2826.65 && salarioBruto < 3751.06){
+    salarioLiquido =  impostoRegraDois.toFixed(2);
+  }else if(salarioBruto > 3751.05 && salarioBruto < 4664.69){
+    salarioLiquido = impostoRegraTres.toFixed(2);
+  }else if(salarioBruto > 4664.68 && salarioBruto < 5189.82){
+    salarioLiquido = impostoRegraQuatro.toFixed(2);
+  }else{
+    salarioLiquido = impostoRegraUm.toFixed(2)
+  }
+}else if(salarioBruto > 5189.82){
+  salarioLiquido = impostoRegraCinco;
+}
+console.log(salarioLiquido);
