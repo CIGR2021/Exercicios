@@ -36,4 +36,20 @@ for(let index = 0; index < numbers.length; index += 1){
 }
 
 console.log(`O Maior número é: ${maiorValor}!`);
-// Requisito 6 - 
+
+// Requisito 6 - Quantos valores ímpares tem no array imprima o resultado, e a mensagem "Números ímpares não encontrados!" se não houver nenhum
+let contador = 0;
+for(let index6 = 0; index6 < numbers.length; index6 += 1){
+  switch (numbers[index6] % 2 == 1){
+    case true:
+      contador += 1;
+      break;
+  }
+}
+if (contador == 0){
+  console.log(`Números ímpares não encontrados!`);
+}else{
+  console.log(`Quantidade de números ímpares é: ${contador}`);
+}
+
+// Requisito 6 -
