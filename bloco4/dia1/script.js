@@ -82,3 +82,22 @@
 // console.log(result)
 
 // Requisito 9
+// let numberOne = 2;
+// let numberTwo = 4;
+// let numberTree = 6;
+// let result = false;
+// 
+// if (numberOne % 2 == 1 || numberTwo % 2 == 1 || numberTree % 2 == 1){
+  // result = true;
+// }
+// console.log(result)
+// 
+// Requisito 10
+let custoDoProduto = 200;
+let quantidadeProduto = 1000;
+let valorDeVenda = 300;
+let imposto = custoDoProduto * 0.2;
+let custoDoProdutoFinal = custoDoProduto + imposto;
+let lucro1000 = (valorDeVenda - custoDoProdutoFinal) * quantidadeProduto;
+
+console.log(lucro1000)
