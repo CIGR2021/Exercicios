@@ -50,22 +50,35 @@
 // Requisito 6
 
 // Requisito 7
-let percent = 90;
-let nota = null;
-if (percent > 100 && percent < 0){
-  console.log("Erro: Nota inválida - valor esperado 'de 0 a 100'");
-}else if (percent >= 90){
-  nota = "A";
-}else if (percent >= 80){
-  nota = "B";
-}else if (percent >= 70){
-  nota = "C";
-}else if (percent >= 60){
-  nota = "D";
-}else if (percent >= 50){
-  nota = "E";
-}else {
-  nota = "F";
-}
+// let percent = 90;
+// let nota = null;
+// if (percent > 100 && percent < 0){
+  // console.log("Erro: Nota inválida - valor esperado 'de 0 a 100'");
+// }else if (percent >= 90){
+  // nota = "A";
+// }else if (percent >= 80){
+  // nota = "B";
+// }else if (percent >= 70){
+  // nota = "C";
+// }else if (percent >= 60){
+  // nota = "D";
+// }else if (percent >= 50){
+  // nota = "E";
+// }else {
+  // nota = "F";
+// }
+// 
+// console.log(nota)
 
-console.log(nota)
+// Requisito 8
+// let numberOne = 1;
+// let numberTwo = 5;
+// let numberTree = 3;
+// let result = false;
+// 
+// if (numberOne % 2 == 0 || numberTwo % 2 == 0 || numberTree % 2 == 0){
+  // result = true;
+// }
+// console.log(result)
+
+// Requisito 9
