@@ -26,16 +26,20 @@ if(media < 20){
   console.log("É maior que 20!");
 }
 // Requisito 5 - Descubra qual o maior valor contido no array e imprima-o
-let maiorValor = null;
+// Requisito 7 - Descubra qual o menor valor contido no array e imprima-o
+let maiorValor = numbers[0];
+let menorValor = numbers[0];
 for(let index = 0; index < numbers.length; index += 1){
-  if (maiorValor < numbers[index]){
-    maiorValor = numbers[index]
-  }else{
-    maiorValor = maiorValor;
+  if (numbers[index] > maiorValor){
+    maiorValor = numbers[index];
+  }
+  if (numbers[index] < menorValor){
+    menorValor = numbers[index];
   }
 }
 
 console.log(`O Maior número é: ${maiorValor}!`);
+console.log(`O Menor número é: ${menorValor}!`);
 
 // Requisito 6 - Quantos valores ímpares tem no array imprima o resultado, e a mensagem "Números ímpares não encontrados!" se não houver nenhum
 let contador = 0;
@@ -51,5 +55,3 @@ if (contador == 0){
 }else{
   console.log(`Quantidade de números ímpares é: ${contador}`);
 }
-
-// Requisito 6 -
