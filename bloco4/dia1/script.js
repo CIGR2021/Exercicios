@@ -39,11 +39,33 @@
 // let ladoB = 4;
 // let ladoC = 1;
 // let soma = ladoA + ladoB > ladoC && ladoB + ladoC > ladoA;
-
+// if (ladoA < 0 || ladoB < 0 || ladoC < 0){
+//    console.log("Erro um dos lados não é positivo")
+// }
 // if (soma){
 //   console.log("É um triângulo");
 // }else{
 //   console.log("Erro! Não é um triângulo");
 // }
 // Requisito 6
-let pecaXadrez = "peão";
+
+// Requisito 7
+let percent = 90;
+let nota = null;
+if (percent > 100 && percent < 0){
+  console.log("Erro: Nota inválida - valor esperado 'de 0 a 100'");
+}else if (percent >= 90){
+  nota = "A";
+}else if (percent >= 80){
+  nota = "B";
+}else if (percent >= 70){
+  nota = "C";
+}else if (percent >= 60){
+  nota = "D";
+}else if (percent >= 50){
+  nota = "E";
+}else {
+  nota = "F";
+}
+
+console.log(nota)
