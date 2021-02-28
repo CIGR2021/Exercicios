@@ -55,3 +55,10 @@ if (contador == 0){
 }else{
   console.log(`Quantidade de números ímpares é: ${contador}`);
 }
+
+// Requisito 8 - Crie um array que vá do 1 ao 25 é imprima-o.
+let numeros = [];
+for (let index = 1; index <= 25; index += 1){
+  numeros.push(index);
+}
+console.log(`Array de número do 1 ao 25 - [${numeros}]`);
