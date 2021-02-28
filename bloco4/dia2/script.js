@@ -57,8 +57,14 @@ if (contador == 0){
 }
 
 // Requisito 8 - Crie um array que vá do 1 ao 25 é imprima-o.
+// Requisito 9 - Divisão de todos os elementos do array por 2
 let numeros = [];
 for (let index = 1; index <= 25; index += 1){
   numeros.push(index);
 }
 console.log(`Array de número do 1 ao 25 - [${numeros}]`);
+let divisaoPorDois = [];
+for (let index = 1; index <= 25; index += 1){
+  divisaoPorDois.push(index/2);
+}
+console.log(`Dividido por dois: [${divisaoPorDois}]`);
