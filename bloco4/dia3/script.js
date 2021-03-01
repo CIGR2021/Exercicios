@@ -63,30 +63,60 @@ Atenção! Note que esse exercício é bem mais complexo que o anterior! Não ba
 asteriscos. Você precisará de uma lógica para imprimir espaços também.
 */
 
+// let n = 5;
+// if (n <= 1){
+  // console.log("Valor da variável 'n' tem que ser maior que 1");
+// }else{
+  // let espaco = "";
+    // for (let index = 1; index < n+1; index += 1){
+      // espaco += " ";
+    // }
+    // console.log(espaco + "*");
+    // espaco = "";
+    // for (let index = 2; index < n+1; index += 1){
+      // espaco += " ";
+    // }
+    // console.log(espaco + "**");
+    // espaco = "";
+    // for (let index = 3; index < n+1; index += 1){
+      // espaco += " ";
+    // }
+    // console.log(espaco + "***");
+    // espaco = "";
+    // for (let index = 4; index < n+1; index += 1){
+      // espaco += " ";
+    // }
+    // console.log(espaco + "****");
+    // espaco = "";
+    // for (let index = 5; index < n+1; index += 1){
+      // espaco += " ";
+    // }
+    // console.log(espaco + "*****");
+// }
+
+/* 4- Depois, faça uma pirâmide com n asteriscos de base:
+
+n = 5
+
+  *
+ ***
+*****
+
+*/
 let n = 5;
 if (n <= 1){
   console.log("Valor da variável 'n' tem que ser maior que 1");
 }else{
   let espaco = "";
-    for (let index = 1; index < n+1; index += 1){
-      espaco += " ";
-    }
-    console.log(espaco + "*");
-    espaco = "";
-    for (let index = 2; index < n+1; index += 1){
-      espaco += " ";
-    }
-    console.log(espaco + "**");
-    espaco = "";
     for (let index = 3; index < n+1; index += 1){
       espaco += " ";
     }
-    console.log(espaco + "***");
+    console.log(espaco + "*" + espaco);
     espaco = "";
     for (let index = 4; index < n+1; index += 1){
       espaco += " ";
     }
-    console.log(espaco + "****");
+    console.log(espaco + "***" + espaco);
     espaco = "";
     for (let index = 5; index < n+1; index += 1){
       espaco += " ";
