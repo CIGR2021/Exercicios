@@ -37,15 +37,59 @@ n = 5
 *****
 
 */
+// let n = 5;
+// if (n <= 1){
+  // console.log("Valor da variável 'n' tem que ser maior que 1");
+// }else{
+  // let linha = "";
+  // for (let index = 0; index < n; index += 1){
+    // for (let index = 4; index < n; index += 1){  
+      // linha += "*";
+    // }
+    // console.log(linha);
+  // }
+// }
+
+/* 3 - Agora inverta o lado do triângulo. Por exemplo:
+
+n = 5
+
+    *
+   **
+  ***
+ ****
+*****
+Atenção! Note que esse exercício é bem mais complexo que o anterior! Não basta, aqui, imprimir somente 
+asteriscos. Você precisará de uma lógica para imprimir espaços também.
+*/
+
 let n = 5;
 if (n <= 1){
   console.log("Valor da variável 'n' tem que ser maior que 1");
 }else{
-  let linha = "";
-  for (let index = 0; index < n; index += 1){
-    for (let index = 4; index < n; index += 1){  
-      linha += "*";
+  let espaco = "";
+    for (let index = 1; index < n+1; index += 1){
+      espaco += " ";
     }
-    console.log(linha);
-  }
+    console.log(espaco + "*");
+    espaco = "";
+    for (let index = 2; index < n+1; index += 1){
+      espaco += " ";
+    }
+    console.log(espaco + "**");
+    espaco = "";
+    for (let index = 3; index < n+1; index += 1){
+      espaco += " ";
+    }
+    console.log(espaco + "***");
+    espaco = "";
+    for (let index = 4; index < n+1; index += 1){
+      espaco += " ";
+    }
+    console.log(espaco + "****");
+    espaco = "";
+    for (let index = 5; index < n+1; index += 1){
+      espaco += " ";
+    }
+    console.log(espaco + "*****");
 }
