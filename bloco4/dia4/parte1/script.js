@@ -38,7 +38,7 @@
 let info = {
   personagem: "Margarida",
   origem: "Pato Donald",
-  nota: "Namorada do personagem principal nos quadrinhos do Pato Donald",
+  nota: "Namorada do personagem principal nos quadrinhos do Pato Donald"
 };
 
 console.log(`Bem-vinda, ${info.personagem}!`);
@@ -62,9 +62,9 @@ for (let key in info){
 
 console.log("-------------------------");
 
-let info2 = {}
+let info2 = {};
 
-info2 = atualizarInfo(info)
+info2 = atualizarInfo(info);
 
 function atualizarInfo(info){
   let chaves = info;

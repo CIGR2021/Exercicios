@@ -2,6 +2,7 @@
 # Repositório - Aluno Carlos Vieira - Turma 10 - T
 # Bloco 4 - Dia 4
 # Java Script - JavaScript - Objetos e funções
+# Exercícios - Parte 1 - Objetos e For/In.
 
 Usando o objeto abaixo, faça os exercícios a seguir:
 
